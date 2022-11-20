@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Caploc/app/src/main/res/drawable-hdpi/button_radius1.xml" value="0.205" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable-hdpi/marker_rectangle.xml" value="0.205" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable-xhdpi/comment_rectangle.xml" value="0.191" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable-xhdpi/rounded_cornered_edittext_border.xml" value="0.191" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable-xhdpi/rounded_rectangular_cornered_edittext_color_primary.xml" value="0.205" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable-xhdpi/selector.xml" value="0.191" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/button_radius.xml" value="0.205" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/dot.xml" value="0.2465" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/ellipse_1.xml" value="0.2465" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/frame_82.xml" value="0.2465" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/rectangle.xml" value="0.191" />
+        <entry key="..\:/Caploc/app/src/main/res/drawable/rectangle_3.xml" value="0.2465" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_about_us.xml" value="0.20677083333333332" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_check_list.xml" value="0.20677083333333332" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_check_list_level.xml" value="0.20677083333333332" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_check_listevel1.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_checkistlevel_new.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_checklist_new.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_damageditem_image.xml" value="0.23125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_damageditem_submit.xml" value="0.25" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_forgot_password.xml" value="0.2125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_linen.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_overall.xml" value="0.25885416666666666" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_profile.xml" value="0.20677083333333332" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_qr_scanner.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_room_scan.xml" value="0.20677083333333332" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_roomscan_new.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_roomtype.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_roomtype_new.xml" value="0.22395833333333334" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/activity_signin.xml" value="0.25" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/card_item.xml" value="0.203125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/checilstevel_input_form.xml" value="0.203125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/checlistevel_input.xml" value="0.228125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/custom_marker.xml" value="0.1484375" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/layout_damgeditemimg_row.xml" value="0.23125" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/layout_notification_popup_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/listofroom_input.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/layout/roomtype_input.xml" value="0.27291666666666664" />
+        <entry key="..\:/Caploc/app/src/main/res/menu/bottom_navigation.xml" value="0.25729166666666664" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_categorylist.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_check_list.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_check_list_level.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_checkistlevel_new.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_room_scan.xml" value="0.14444444444444443" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/activity_roomscan_new.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/card_item.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/category_item_list.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/checlistevel_input.xml" value="0.14444444444444443" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/listofroom_input.xml" value="0.20102564102564102" />
+        <entry key="..\:/Raj/caploc/Caploc/app/src/main/res/layout/roomtype_input.xml" value="0.17291666666666666" />
+        <entry key="app/src/main/res/layout/activity_check_list_level.xml" value="0.2390625" />
+        <entry key="app/src/main/res/layout/activity_check_listevel1.xml" value="0.29010416666666666" />
+        <entry key="app/src/main/res/layout/activity_checkistlevel_new.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.3572916666666667" />
+        <entry key="app/src/main/res/layout/activity_room_scan.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/activity_roomscan_new.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/activity_roomtype.xml" value="0.19444444444444445" />
+        <entry key="app/src/main/res/layout/checlistevel_input.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/custom_marker.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/layout_damgeditemimg_row.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/layout_notification_popup_dialog.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/listofroom_input.xml" value="0.11203703703703703" />
+        <entry key="app/src/main/res/layout/roomtype_input.xml" value="0.11203703703703703" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

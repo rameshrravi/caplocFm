@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckListLevel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_above="@id/bottom_navigation1"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="40dp"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="BACK"
+                    android:textAllCaps="true"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/white"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:text="CheckList"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo1" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/checklist_recycler"
+            android:layout_width="match_parent"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/actualqty"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_alignParentLeft="true"-->
+        <!--                    android:layout_alignParentTop="true"-->
+
+        <!--                    android:layout_marginTop="9dp"-->
+        <!--                    android:fontFamily="@font/nunito_sans"-->
+        <!--                    android:gravity="center_vertical"-->
+        <!--                    android:text="Actual Quantity -     0"-->
+        <!--                    android:textAppearance="@style/prepare_you" />-->
+
+        <!--                <LinearLayout-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:orientation="horizontal">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/availableqty"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_alignParentLeft="true"-->
+        <!--                        android:layout_alignParentTop="true"-->
+
+        <!--                        android:layout_marginTop="9dp"-->
+        <!--                        android:fontFamily="@font/nunito_sans"-->
+        <!--                        android:gravity="center_vertical"-->
+        <!--                        android:text="Available Quantity"-->
+        <!--                        android:textAppearance="@style/prepare_you" />-->
+
+        <!--                    <EditText-->
+        <!--                        android:id="@+id/avibaleqty_edit"-->
+        <!--                        android:layout_width="80dp"-->
+        <!--                        android:layout_height="45dp"-->
+        <!--                        android:layout_marginStart="10dp"-->
+        <!--                        android:layout_marginLeft="10dp"-->
+        <!--                        android:layout_marginTop="10dp"-->
+        <!--                        android:layout_marginRight="6dp"-->
+        <!--                        android:background="@drawable/rounded_cornered_edittext_border"-->
+        <!--                        android:backgroundTint="#F1F5F9"-->
+        <!--                        android:drawablePadding="12dp"-->
+        <!--                        android:drawableTint="@color/black"-->
+        <!--                        android:fontFamily="@font/nunito_sans_semibold"-->
+        <!--                        android:inputType="text"-->
+        <!--                        android:padding="12dp"-->
+        <!--                        android:text=""-->
+        <!--                        android:textColor="@color/black"-->
+        <!--                        android:textColorHint="@color/graydark"-->
+        <!--                        android:textSize="14sp" />-->
+        <!--                </LinearLayout>-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="left"-->
+        <!--                android:fontFamily="@font/nunito_sans_bold"-->
+        <!--                android:text="Completed ?"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="20dp">-->
+
+        <!--            </TextView>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <Button-->
+        <!--                    android:id="@+id/yes"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:background="@drawable/button_radius"-->
+        <!--                    android:fontFamily="@font/nunito_sans_semibold"-->
+        <!--                    android:text="Yes" />-->
+
+        <!--                <Button-->
+        <!--                    android:id="@+id/no"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:background="@drawable/button_radius"-->
+        <!--                    android:fontFamily="@font/nunito_sans_semibold"-->
+        <!--                    android:text="No" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginBottom="5dp"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:visibility="gone">-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/images"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_alignParentLeft="true"-->
+        <!--                    android:layout_alignParentTop="true"-->
+
+        <!--                    android:layout_marginLeft="19dp"-->
+        <!--                    android:layout_marginTop="9dp"-->
+        <!--                    android:fontFamily="@font/nunito_sans"-->
+        <!--                    android:gravity="center_vertical"-->
+
+        <!--                    android:text="Images"-->
+        <!--                    android:textAppearance="@style/prepare_you" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/camerauploaded"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_alignParentLeft="true"-->
+        <!--                    android:layout_alignParentTop="true"-->
+        <!--                    android:layout_marginLeft="19dp"-->
+        <!--                    android:layout_marginTop="9dp"-->
+        <!--                    android:drawableLeft="@drawable/camera"-->
+        <!--                    android:fontFamily="@font/nunito_sans"-->
+        <!--                    android:gravity="center_vertical"-->
+        <!--                    android:text=""-->
+        <!--                    android:textAppearance="@style/prepare_you" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/cam_img"-->
+        <!--                    android:layout_width="60dp"-->
+        <!--                    android:layout_height="60dp"-->
+        <!--                    android:layout_gravity="bottom"-->
+        <!--                    android:layout_marginLeft="10dp"-->
+        <!--                    tools:srcCompat="@tools:sample/avatars" />-->
+
+        <!--            </LinearLayout>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="left"-->
+        <!--                android:fontFamily="@font/nunito_sans_bold"-->
+        <!--                android:text="Asset Problem ?"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="18dp">-->
+
+        <!--            </TextView>-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="horizontal">-->
+
+        <!--                <Button-->
+        <!--                    android:id="@+id/damaged"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:background="@drawable/button_radius"-->
+
+        <!--                    android:fontFamily="@font/nunito_sans_semibold"-->
+        <!--                    android:text="Damaged" />-->
+
+        <!--                <Button-->
+        <!--                    android:id="@+id/missing"-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:background="@drawable/button_radius"-->
+        <!--                    android:fontFamily="@font/nunito_sans_semibold"-->
+        <!--                    android:text="Missing" />-->
+        <!--            </LinearLayout>-->
+
+        <!--            <EditText-->
+        <!--                android:id="@+id/comments"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="130dp"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:background="@drawable/comment_rectangle"-->
+        <!--                android:gravity="top"-->
+        <!--                android:hint="Comments"-->
+        <!--                android:padding="10dp">-->
+
+        <!--            </EditText>-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/text_finish"-->
+        <!--                android:layout_width="300dp"-->
+        <!--                android:layout_height="60dp"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:layout_marginTop="20dp"-->
+        <!--                android:background="@drawable/rounded_rectangular_cornered_edittext_color_primary"-->
+
+        <!--                android:fontFamily="@font/nunito_sans_bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:paddingLeft="48dp"-->
+        <!--                android:paddingTop="10dp"-->
+        <!--                android:paddingRight="48dp"-->
+        <!--                android:paddingBottom="10dp"-->
+        <!--                android:text="Next"-->
+        <!--                android:textAllCaps="true"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/black"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>

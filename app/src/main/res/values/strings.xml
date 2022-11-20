@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CAPLOC FM</string>
+    <string name="shahin_alam">Shahin Alam</string>
+    <string name="hello_">\u00F0\u009F\u0091\u008B Hello! </string>
+    <string name="sample_text">
+
+Sample Text
+</string>
+    <string name="lorem_ipsum">
+
+Lorem Ipsum is simply dummy text of the printing
+</string>
+    <string name="read_more">
+
+Read More
+</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+</resources>

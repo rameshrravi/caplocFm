@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textAppearance="@style/prepare_you" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/actualqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textAppearance="@style/prepare_you" />
+
+            <LinearLayout
+                android:id="@+id/avaiqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/availableqty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:gravity="center_vertical"
+                    android:text="Available Quantity"
+                    android:textAppearance="@style/prepare_you" />
+
+                <EditText
+                    android:id="@+id/avibaleqty_edit"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/rounded_cornered_edittext_border"
+                    android:backgroundTint="#F1F5F9"
+                    android:drawablePadding="12dp"
+                    android:drawableTint="@color/black"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/graydark"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:text="Completed ?"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_radius"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Yes" />
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_radius"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="No" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/images"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+
+                android:text="Images"
+                android:textAppearance="@style/prepare_you" />
+
+            <TextView
+                android:id="@+id/camerauploaded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="9dp"
+                android:drawableLeft="@drawable/camera"
+                android:fontFamily="@font/nunito_sans"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textAppearance="@style/prepare_you" />
+
+            <ImageView
+                android:id="@+id/cam_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/asset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:visibility="gone"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Asset Problem ?"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/damaged"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_radius"
+
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Damaged" />
+
+            <Button
+                android:id="@+id/missing"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_radius"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Missing" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/comment_rectangle"
+            android:gravity="top"
+            android:hint="Comments"
+            android:padding="10dp">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_finish"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_rectangular_cornered_edittext_color_primary"
+
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="center"
+            android:paddingLeft="48dp"
+            android:paddingTop="10dp"
+            android:paddingRight="48dp"
+            android:paddingBottom="10dp"
+            android:text="Finish"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

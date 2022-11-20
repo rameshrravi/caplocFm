@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:layout_gravity="center"
+    tools:context=".Linen">
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="BACK"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textSize="16dp"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:gravity="center"
+            android:text="Overall"
+            android:textAllCaps="true"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo1" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@id/pick"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:inputType="text"
+            android:padding="12dp"
+            android:text="Sent"
+            android:textColor="@color/black"
+            android:textColorHint="@color/graydark"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pick"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:inputType="text"
+
+            android:padding="12dp"
+            android:text="Pickup"
+            android:textColor="@color/black"
+            android:textColorHint="@color/graydark"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_height="match_parent"
+
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Bath Towels"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/sentbox"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Hand Towels"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit1"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox1"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox1"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Wash Cloths"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit2"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox2"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox2"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Bath Maths"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit3"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox3"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox3"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Pillow Case"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit4"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox4"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox4"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Double Pillow"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit6"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox6"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox6"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="King Pillow"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit7"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox7"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox7"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Double Blanket"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit8"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox8"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox8"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="King Blanket"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit9"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox9"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox9"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Double Bed Spread"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit10"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox10"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox10"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Single Bed Spread"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit11"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox11"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox11"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Crib Sheet"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit12"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox12"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox12"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/linen13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:gravity="center_vertical"
+                        android:text="Queen Bed Spread"
+                        android:textColor="@color/black"
+                        android:textSize="18dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/avibaleqty_edit13"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_toLeftOf="@id/pickbox13"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/pickbox13"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/rounded_cornered_edittext_border"
+                        android:backgroundTint="#F1F5F9"
+                        android:drawablePadding="12dp"
+                        android:drawableTint="@color/black"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:inputType="number"
+                        android:padding="12dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/graydark"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/text_submit"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_rectangular_cornered_edittext_color_primary"
+                android:layout_marginBottom="80dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:gravity="center"
+                android:paddingLeft="48dp"
+                android:paddingTop="10dp"
+                android:paddingRight="48dp"
+                android:paddingBottom="10dp"
+                android:text="Submit"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        app:itemIconTint="@drawable/selector"
+        app:itemRippleColor="@color/black"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation" />
+
+
+</RelativeLayout>
